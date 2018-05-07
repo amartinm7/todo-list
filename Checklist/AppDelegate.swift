@@ -14,9 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        /*
+        [[UILabel appearance] setFont:[UIFont fontWithName:@"GrinchedRegular" size:11.0]];
+        [[UITextField appearance] setFont:[UIFont fontWithName:@"GrinchedRegular" size:11.0]];
+        [[UITextView appearance] setFont:[UIFont fontWithName:@"GrinchedRegular" size:11.0]];
+        [[UILabel appearance] setFont:[UIFont fontWithName:@"CustomFont-Regular" size:17.0]];
+        */
         return true
     }
 

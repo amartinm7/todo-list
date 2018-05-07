@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		BA800DA420A0496000ADD465 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA800DA320A0496000ADD465 /* AppDelegate.swift */; };
-		BA800DA620A0496000ADD465 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA800DA520A0496000ADD465 /* ViewController.swift */; };
+		BA800DA620A0496000ADD465 /* CheckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA800DA520A0496000ADD465 /* CheckListViewController.swift */; };
 		BA800DA920A0496000ADD465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA800DA720A0496000ADD465 /* Main.storyboard */; };
 		BA800DAC20A0496000ADD465 /* Checklist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA800DAA20A0496000ADD465 /* Checklist.xcdatamodeld */; };
 		BA800DAE20A0496100ADD465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA800DAD20A0496100ADD465 /* Assets.xcassets */; };
 		BA800DB120A0496100ADD465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA800DAF20A0496100ADD465 /* LaunchScreen.storyboard */; };
+		BA800DBC20A0511600ADD465 /* GrinchedRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA800DBB20A0511600ADD465 /* GrinchedRegular.otf */; };
+		BA800DBE20A069D200ADD465 /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA800DBD20A069D200ADD465 /* CheckListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA800DA020A0496000ADD465 /* Checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA800DA320A0496000ADD465 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA800DA520A0496000ADD465 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA800DA520A0496000ADD465 /* CheckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListViewController.swift; sourceTree = "<group>"; };
 		BA800DA820A0496000ADD465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA800DAB20A0496000ADD465 /* Checklist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Checklist.xcdatamodel; sourceTree = "<group>"; };
 		BA800DAD20A0496100ADD465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA800DB020A0496100ADD465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA800DB220A0496100ADD465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA800DBB20A0511600ADD465 /* GrinchedRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GrinchedRegular.otf; sourceTree = "<group>"; };
+		BA800DBD20A069D200ADD465 /* CheckListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		BA800DA220A0496000ADD465 /* Checklist */ = {
 			isa = PBXGroup;
 			children = (
+				BA800DBD20A069D200ADD465 /* CheckListItem.swift */,
+				BA800DBA20A0511600ADD465 /* fonts */,
 				BA800DA320A0496000ADD465 /* AppDelegate.swift */,
-				BA800DA520A0496000ADD465 /* ViewController.swift */,
+				BA800DA520A0496000ADD465 /* CheckListViewController.swift */,
 				BA800DA720A0496000ADD465 /* Main.storyboard */,
 				BA800DAD20A0496100ADD465 /* Assets.xcassets */,
 				BA800DAF20A0496100ADD465 /* LaunchScreen.storyboard */,
@@ -65,6 +71,14 @@
 				BA800DAA20A0496000ADD465 /* Checklist.xcdatamodeld */,
 			);
 			path = Checklist;
+			sourceTree = "<group>";
+		};
+		BA800DBA20A0511600ADD465 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BA800DBB20A0511600ADD465 /* GrinchedRegular.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA800DBC20A0511600ADD465 /* GrinchedRegular.otf in Resources */,
 				BA800DB120A0496100ADD465 /* LaunchScreen.storyboard in Resources */,
 				BA800DAE20A0496100ADD465 /* Assets.xcassets in Resources */,
 				BA800DA920A0496000ADD465 /* Main.storyboard in Resources */,
@@ -138,9 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA800DA620A0496000ADD465 /* ViewController.swift in Sources */,
+				BA800DA620A0496000ADD465 /* CheckListViewController.swift in Sources */,
 				BA800DAC20A0496000ADD465 /* Checklist.xcdatamodeld in Sources */,
 				BA800DA420A0496000ADD465 /* AppDelegate.swift in Sources */,
+				BA800DBE20A069D200ADD465 /* CheckListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +303,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 273PW2T5AH;
 				INFOPLIST_FILE = Checklist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amm.checklist.Checklist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amm.Checklist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,11 +322,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 273PW2T5AH;
 				INFOPLIST_FILE = Checklist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amm.checklist.Checklist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amm.Checklist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
