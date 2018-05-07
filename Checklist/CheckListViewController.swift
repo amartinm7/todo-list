@@ -10,19 +10,18 @@ import UIKit
 
 class TheCell: UITableViewCell{
     @IBOutlet weak var textField: UITextField!
-
 }
 
 class CheckListViewController: UITableViewController {
     
     let cellId = 1000 //tag id
     var items = [CheckListItem]()
-    @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("hello world")
+        self.tableView.backgroundView = UIImageView(image: UIImage(named: "cowSkin"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,8 +43,8 @@ class CheckListViewController: UITableViewController {
     }
     
     //  writes the content of the cell
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CheckListItem", for: indexPath) // as TheCell!
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> TheCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CheckListItem", for: indexPath) as! TheCell
         let item = items[indexPath.row]
         configureText(for: cell, with: item)
         configureCheckmark(for: cell, with: item)
