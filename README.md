@@ -1,2 +1,3 @@
-# grinched
-grinched - is a simple app to play to the grinched game, that is, to hit the mark
+
+# checked list or todo list in swift
+Simple application for ios mobile to manage a check list
