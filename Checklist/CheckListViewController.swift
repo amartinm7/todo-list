@@ -12,7 +12,7 @@ class TheCell: UITableViewCell{
     @IBOutlet weak var textField: UITextField!
 }
 
-class CheckListViewController: UITableViewController {
+class CheckListViewController: UITableViewController, UITextFieldDelegate {
     
     let cellId = 1000 //tag id
     var items = [CheckListItem]()
@@ -83,6 +83,8 @@ class CheckListViewController: UITableViewController {
     //  setup text
     func configureText(for cell: UITableViewCell, with item: CheckListItem) {
         let label = cell.viewWithTag(1000) as! UITextField
+        // Handle the text field’s user input through delegate callbacks.
+        label.delegate = self
         label.text = item.text
     }
     
@@ -116,6 +118,18 @@ class CheckListViewController: UITableViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    //MARK: UITextFieldDelegate
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
+    // do something with the text before you close the keyboard
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        // mealNameLabel.text = textField.text
     }
     
 }

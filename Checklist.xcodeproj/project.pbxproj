@@ -15,6 +15,7 @@
 		BA800DB120A0496100ADD465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA800DAF20A0496100ADD465 /* LaunchScreen.storyboard */; };
 		BA800DBC20A0511600ADD465 /* GrinchedRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA800DBB20A0511600ADD465 /* GrinchedRegular.otf */; };
 		BA800DBE20A069D200ADD465 /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA800DBD20A069D200ADD465 /* CheckListItem.swift */; };
+		BAB60DA320A24E0A00FA0EC6 /* AddItemControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB60DA220A24E0A00FA0EC6 /* AddItemControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BA800DB220A0496100ADD465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA800DBB20A0511600ADD465 /* GrinchedRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GrinchedRegular.otf; sourceTree = "<group>"; };
 		BA800DBD20A069D200ADD465 /* CheckListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
+		BAB60DA220A24E0A00FA0EC6 /* AddItemControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				BA800DA320A0496000ADD465 /* AppDelegate.swift */,
 				BA800DA520A0496000ADD465 /* CheckListViewController.swift */,
 				BA800DA720A0496000ADD465 /* Main.storyboard */,
+				BAB60DA220A24E0A00FA0EC6 /* AddItemControllerViewController.swift */,
 				BA800DAD20A0496100ADD465 /* Assets.xcassets */,
 				BA800DAF20A0496100ADD465 /* LaunchScreen.storyboard */,
 				BA800DB220A0496100ADD465 /* Info.plist */,
@@ -157,6 +160,7 @@
 				BA800DAC20A0496000ADD465 /* Checklist.xcdatamodeld in Sources */,
 				BA800DA420A0496000ADD465 /* AppDelegate.swift in Sources */,
 				BA800DBE20A069D200ADD465 /* CheckListItem.swift in Sources */,
+				BAB60DA320A24E0A00FA0EC6 /* AddItemControllerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

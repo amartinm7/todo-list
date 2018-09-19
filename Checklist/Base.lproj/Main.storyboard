@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -35,7 +36,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="textColor" red="0.98431372549999996" green="0.24313725489999999" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" name="Grinched" family="Grinched" pointSize="16"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                         </textField>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -58,6 +59,7 @@
                         <barButtonItem key="rightBarButtonItem" springLoaded="YES" systemItem="add" id="Ypt-nb-l2u">
                             <connections>
                                 <action selector="addItem" destination="7MG-Ju-xmu" id="do9-8L-OSP"/>
+                                <segue destination="Enb-R8-GJo" kind="presentation" modalTransitionStyle="flipHorizontal" id="b4A-Aa-UbE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -65,6 +67,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EU1-5l-hRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1023.75" y="-7.394366197183099"/>
+        </scene>
+        <!--Add Item Controller View Controller-->
+        <scene sceneID="gSv-lJ-2zk">
+            <objects>
+                <viewController id="Enb-R8-GJo" customClass="AddItemControllerViewController" customModule="Checklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g0Y-5n-b52">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ET-Rz-mID" customClass="UIStackView" customModule="Checklist" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="40" width="320" height="528"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlt-J6-rnN" userLabel="closeBtn">
+                                        <rect key="frame" x="136" y="476" width="49" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Grinched" family="Grinched" pointSize="17"/>
+                                        <state key="normal" title="Save it!">
+                                            <color key="titleColor" red="0.98431372549999996" green="0.24313725489999999" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="close" destination="Enb-R8-GJo" eventType="touchUpInside" id="XXh-uT-AdO"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter title" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-jO-8br" userLabel="textFld">
+                                        <rect key="frame" x="20" y="49" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.98431372549999996" green="0.24313725489999999" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Grinched" family="Grinched" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Put your title and your pic!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mam-pA-7sK" userLabel="titleLbl">
+                                        <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Grinched" family="Grinched" pointSize="17"/>
+                                        <color key="textColor" red="0.98431372549999996" green="0.24313725489999999" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vaca" translatesAutoresizingMaskIntoConstraints="NO" id="U51-bW-iy0" userLabel="photoImg">
+                                        <rect key="frame" x="20" y="87" width="280" height="280"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="L5g-sj-lZu"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoImg" destination="U51-bW-iy0" id="Ibc-aj-0RR"/>
+                        <outlet property="textFld" destination="Rcy-jO-8br" id="DZx-XV-Hk0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfk-8t-joE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820.625" y="-46.478873239436624"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YoC-2J-D4o">
@@ -93,6 +152,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon-App-20x20" width="20" height="20"/>
+        <image name="Icon-App-20x20" width="30" height="30"/>
+        <image name="vaca" width="256" height="256"/>
     </resources>
 </document>
